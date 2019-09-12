@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:background="@drawable/card"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <EditText
+                android:id="@+id/et_status"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+        </EditText>
+        <Button
+                android:text="@string/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_send"/>
+    </LinearLayout>
+    <ScrollView
+            android:layout_weight="10"
+            android:fillViewport="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/list_home"/>
+    </ScrollView>
+    <LinearLayout
+            android:layout_weight="1"
+            android:background="@drawable/card"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_gravity="center|bottom"
+            android:gravity="right|center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:text="@string/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_refresh"/>
+        <Button
+                android:text="@string/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_logout"/>
+    </LinearLayout>
+
+</LinearLayout>
